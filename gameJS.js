@@ -19,11 +19,19 @@ function addMessage(Text){
 }
 
 
+
+
+
 // here is an example for you
 $(function(){
 	$("#pick-stone").click(function(){
-
 		addMessage("哈囉");
 	})
+
+	$("#eating").click(function(){
+		$("#food").text(parseInt($("#food").text())+1);
+	})
+	
+
 
 })

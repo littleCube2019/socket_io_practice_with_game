@@ -20,16 +20,17 @@
     	<!-- show status here--> 
     	<div id="attribute" >attribute
         <div id="basic-data">
-            <div>荒島漂流第: 1 天</div>
-            <div>體力: 100 </div>
+            <div>荒島漂流第: <span id="day"> 1 </span> 天</div>
+            <div>體力: <span id="hp">100</span> </div>
 
-            <div>力量: 1 </div>
-            <div>敏捷: 1 </div>
+            <div>力量: <span id="power">1</span> </div>
+            <div>敏捷: <span id="speed">1</span> </div>
         </div>
 
         <div id="resource">
-            <div>石頭: 100 </div>
-            <div>木頭: 100 </div>
+            <div>石頭: <span id="stone">0</span> </div> 
+            <div>木頭: <span id="wood">0</span> </div>
+            <div>食物: <span id="food">0</span> </div>
         </div>
         </div>
 
@@ -37,7 +38,7 @@
 <!-- all buttons or something user interaction here-->
     	<div id="interact" >interact
     		<div id="at-camp" class="interact-sector">
-    			<button class="interact-button"> 吃東西 </button>
+    			<button id="eating" class="interact-button"> 吃東西 </button>
     			享受得來不易的一餐...
 
     			<button class="interact-button"> 睡覺 </button>
@@ -68,9 +69,13 @@
 
 
     	<!-- show message here--> 
-    	<div id="message">message</div> 
-
-	</div> 
+    	<div id="message">message
+        <div>你漂流到一處荒島的海灘</div>
+        <div>前方有一處森林，你身邊有一些剩下的罐頭跟破碎的木頭</div>
+        <div>除此之外陪伴你的只有海浪的起伏聲...</div>
+       </div> 
+        </div> 
+        
 
 
 
