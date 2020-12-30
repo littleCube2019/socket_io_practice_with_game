@@ -18,7 +18,6 @@ io.on('connection', (socket) => {
   socket.emit("welcome");
   socket.on('disconnect', () => console.log('Client disconnected'));
   socket.on("update", (day, hour, stamina, health, exp, wood, stone, food)=>{
-    socket.emit("welcome");
     if(stamina<=0 || health<=0){
       socket.emit("gameover");
     }
