@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+		</script>
+
+		<script type="text/javascript">
+		var click_counter=0;
+		var col_counter=0;
+		$(function(){
+			$("#button1").click((event)=>{
+				click_counter += 1;
+				if(click_counter%2==1){
+					$(".pic").hide();
+				}
+				else if(click_counter%2==0){
+					$(".pic").show();
+				}
+				$("#aaa").text("you click the button " + click_counter + " times");
+			})
+
+			$("#cola").keypress((event)=>{
+				col_counter += 1;
+				if(event.key=="r")
+					$("#intro").css("color","red");
+				else if(event.key=="g")
+					$("#intro").css("color","green");
+				else if(event.key=="b")
+					$("#intro").css("color","blue");
+				else if(event.key=="B")
+					$("#intro").css("background","black");
+				else if(event.key=="W")
+					$("#intro").css("background","white");
+				$("#aab").text("you change the color " + col_counter + " times");
+			})
+
+			$("#4_1").click((event)=>{
+				$("#school").text("幹話大全");
+			})
+			$("#4_2").click((event)=>{
+				$("#list ul li:nth-child(4)").css("color","red");
+			})
+			$("#4_3").click((event)=>{
+				$("#list ul li:nth-child(3)").css("background","black");
+			})
+			$("#4_4").click((event)=>{
+				$("#list ul li:nth-child(5)").remove();
+			})
+			$("#4_5").click((event)=>{
+				$("#list ul li:nth-child(1)").after("串串大學");
+			})
+			//your code here
+		})
+		</script>
+
+		<title> Homework</title>
+	</head>
+
+	<body>
+		<div id="part1">
+			<p> part1</p>
+		<img class="pic"  src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2020/01/31/20200131-052418_U17017_M588719_cd2e.jpg?itok=s0SyFjTD">
+			<div>
+		    	<p id="intro" style="padding-left:300px">這是一隻可愛的貓貓</p>  
+			</div>
+		
+		<button id="button1">click to hide/show</button>
+		<p id="aaa">you click the button 0 times</p>
+		
+		<input id="cola"></input>
+		<p id="aab">you change the color 0 times</p>	
+
+		</div>
+		<div id="part2"> 
+			<p> part2</p>
+			<div id="list">
+				<p id="school"> 頂大列表 </p>
+				<ul>
+					<li>帝國大學</li>
+					<li>不是北京清華大學</li>
+					<li>交作業大學</li>
+					<li>南部山豬大學</li>
+					<li>政治商專</li>
+				</ul>
+			</div>
+			<div>
+				<button id="4_1">將"頂大列表" 替換成 "幹話大全"</button>
+				<button id="4_2">將"南部山豬大學"文字顏色變成紅色</button>
+				<button id="4_3">將"交作業大學"背景顏色變成黑色</button>
+				<button id="4_4">將 "政治商專" 移除</button>
+				<button id="4_5">將 "串串大學" 插入"帝國大學" 與 "不是北京清華大學" 之間</button>
+			</div>
+		</div>
+	</body>
+</html>

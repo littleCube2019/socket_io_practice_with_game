@@ -1,6 +1,9 @@
 var num_message = 0;
 var MAX_MESSAGE = 22;
 
+
+
+
 //This is an API for you , 
 //you DO NOT need to understand how it works.
 //You just need to know how to use it.
@@ -26,6 +29,10 @@ function addMessage(Text){
 $(function(){
 	$("#pick-stone").click(function(){
 		addMessage("哈囉");
+	})
+
+	$("#dig-stone").click(function(){
+		addMessage("你挖了石頭");
 	})
 
 	$("#eating").click(function(){
