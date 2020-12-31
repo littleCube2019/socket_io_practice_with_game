@@ -28,7 +28,7 @@ div {
 	height:50%;
 	float: left;
 	width: 100%;
-	/*overflow:scroll;*/
+	overflow:scroll;
 } 
 
 .interact-button{
